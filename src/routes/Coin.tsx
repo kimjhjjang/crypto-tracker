@@ -170,7 +170,6 @@ function Coin() {
     () => fetchCoinTickers(coinId)
   );
 
-  console.log(infoData);
   const loading = infoLoading || tickersLoading;
 
   return (

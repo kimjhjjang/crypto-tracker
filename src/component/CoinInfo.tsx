@@ -111,7 +111,6 @@ function CoinInfo({ coinId }: ICoinId) {
   const { isLoading, data } = useQuery<PriceData>(["tickers", coinId], () =>
     fetchCoinTickers(coinId)
   );
-  console.log(data);
   return (
     <InfoBox>
       {isLoading ? (
